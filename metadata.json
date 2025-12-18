@@ -1,0 +1,5 @@
+{
+  "name": "CSKH Bot AI",
+  "description": "An intelligent customer support bot that answers questions based on uploaded business documents, PDFs, and text files using Gemini 3 Flash.",
+  "requestFramePermissions": []
+}
