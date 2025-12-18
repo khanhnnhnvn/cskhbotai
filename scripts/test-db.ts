@@ -1,4 +1,8 @@
 import { PrismaClient } from '@prisma/client';
+import dotenv from 'dotenv';
+dotenv.config();
+
+console.log("DB URL:", process.env.DATABASE_URL ? "Defined" : "Undefined");
 
 const prisma = new PrismaClient({
     log: ['query', 'info', 'warn', 'error'],
