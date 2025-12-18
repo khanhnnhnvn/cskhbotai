@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Document {
+  id         String   @id @default(cuid())
+  name       String
+  type       String
+  size       Int
+  uploadDate DateTime @default(now())
+  base64     String   @db.LongText
+}
+
+model BotConfig {
+  id    Int    @id @default(1)
+  name  String
+  rules String @db.Text
+}
